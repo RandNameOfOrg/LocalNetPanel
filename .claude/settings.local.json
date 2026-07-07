@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "PowerShell(cd \"C:\\\\JLL\\\\Examples\\\\localNetworkPanel\\\\backend\"; node_modules\\\\.bin\\\\tsc.cmd --noEmit 2>&1; Write-Host \"backend=$LASTEXITCODE\"; cd \"C:\\\\JLL\\\\Examples\\\\localNetworkPanel\\\\frontend\"; node_modules\\\\.bin\\\\tsc.cmd --noEmit 2>&1; Write-Host \"frontend=$LASTEXITCODE\")"
+    ]
+  }
+}

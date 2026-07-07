@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-950 text-gray-100 min-h-screen;
+  }
+  * {
+    @apply border-gray-700;
+  }
+}
+
+/* xterm.js container */
+.xterm-container {
+  @apply w-full h-full bg-black rounded-lg overflow-hidden p-1;
+}
+.xterm-container .xterm {
+  height: 100%;
+}
