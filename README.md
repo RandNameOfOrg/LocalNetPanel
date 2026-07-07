@@ -71,10 +71,6 @@ the JWT and enforced on both the API (`requirePermission`) and the UI (`can` /
 npm run install:all
 ```
 
-> **On the JLL network** the default registry needs auth. Either run
-> `npm config set registry https://registry.npmjs.org` once, or append
-> `--registry https://registry.npmjs.org` to each install command.
-
 ## 2. Configure the backend
 
 ```bash
