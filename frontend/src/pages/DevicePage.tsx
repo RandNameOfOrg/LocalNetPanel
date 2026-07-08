@@ -37,7 +37,8 @@ export default function DevicePage() {
 
   const { data: device } = useDevice(deviceId);
   const { data: credentials = [] } = useCredentials(deviceId);
-  const selectedCredId = credId ? Number(credId) : null;
+  const selectedCredId = credId ? Number(credId)
+      : credentials.length > 0 ? credentials[0].id : null;
 
   const canPower = useCan('power');
   const canTerminal = useCan('terminal');
@@ -76,7 +77,7 @@ export default function DevicePage() {
         <div className="mb-4 flex items-center gap-3">
           <User size={14} className="text-gray-500" />
           <div className="w-64">
-            <CredentialSelect deviceId={deviceId} value={credId} onChange={setCredId} />
+            <CredentialSelect deviceId={deviceId} value={selectedCredId ? selectedCredId.toString() : credId} onChange={setCredId} />
           </div>
         </div>
       )}

@@ -365,6 +365,7 @@ powershell -File ./create-archive.ps1 -OutDir C:\Temp
 # TODO
 
 - Add "copy credentials from another server" button, only to admins
+  - (Button "Copy") → choose server and user
 - Allow to change path in file manage
 - Keep sftp connection for 30s after last directory check or file edit/upload. Needed to reduce time of loading
 - Allow editing and creating files
@@ -374,3 +375,4 @@ powershell -File ./create-archive.ps1 -OutDir C:\Temp
 - after apply: add close btn for success/fail
 - DNS verify, save verify key per domain, so it wouldnt be different
 - [BUG]: When openning раздел in a new tab panel by force removes your session (force log-out)
+- allow chained ssh connections
