@@ -361,4 +361,16 @@ powershell -File ./create-archive.ps1 -OutDir C:\Temp
   `domains` user can only touch domains assigned to them.
 - This panel grants real shell access to your machines — run it on a trusted
   network and put it behind HTTPS (set `NODE_ENV=production` so cookies are `secure`).
-```
+
+# TODO
+
+- Add "copy credentials from another server" button, only to admins
+- Allow to change path in file manage
+- Keep sftp connection for 30s after last directory check or file edit/upload. Needed to reduce time of loading
+- Allow editing and creating files
+  -  Add permission `File edit`,`File create/delete` (also includes uploading)
+- Hide scroll bar in terminal gui by changing size of terminal
+- Change terminal size (remote size) so it would fit in terminal gui panel
+- after apply: add close btn for success/fail
+- DNS verify, save verify key per domain, so it wouldnt be different
+- [BUG]: When openning раздел in a new tab panel by force removes your session (force log-out)
